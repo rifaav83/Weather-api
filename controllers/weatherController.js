@@ -25,6 +25,6 @@ exports.getWeather = async (req, res) => {
 
   } catch (error) {
     console.log(error.response?.data || error.message);
-    res.status(500).json({ message: "City not found or error" });
+    res.status(500).json({ message: "City is not found or error" });
   }
 };
